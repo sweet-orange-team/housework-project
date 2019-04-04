@@ -1,40 +1,43 @@
-#include<iostream>
+ï»¿#include<iostream>
+#include<fstream>
 #include<conio.h>	
-#include<regex>			//ÕıÔò±í´ïÊ½¿â£¬»òĞíÄã¿ÉÒÔÓÃÕâ¸ö´¦ÀíÊı¾İ
+#include<regex>						//æ­£åˆ™è¡¨è¾¾å¼åº“ï¼Œæˆ–è®¸ä½ å¯ä»¥ç”¨è¿™ä¸ªå¤„ç†æ•°æ®
+#include"base64.h"
 #include"console.h"	
 using namespace std;
-#define begin cout<<user.name<<""<<user.location<<">";		//Ä£Äâ....µ¼º½£¿
+
+#define begin cout<<user.name<<""<<user.location<<">";		//æ¨¡æ‹ŸLinux....å¯¼èˆªï¼Ÿ
 #define clear system("cls");
-/*
-³õÊ¼»¯ĞèÒªÓÃµ½µÄÈ«²¿Í¼ÊéÊı¾İ
-*/
+
+//åˆå§‹åŒ–éœ€è¦ç”¨åˆ°çš„å…¨éƒ¨å›¾ä¹¦å’Œç”¨æˆ·æ•°æ®
+
+
 
 int main() {
-	Console window;		//³õÊ¼»¯¿ØÖÆÌ¨
-
-	//Ö÷½çÃæ
-	cout << "\t\t\t\t\tÍ¼Êé¹ÜÀíÏµÍ³" << endl;
-	cout << "\tËæ»úÍÆ¼ö£º" << endl;
-	cout << "\t\t\t\t******Èı±¾Ëæ»úÍÆ¼öµÄÍ¼Êé" << endl;
-	cout << "\t\t\t\t******Èı±¾Ëæ»úÍÆ¼öµÄÍ¼Êé" << endl;
-	cout << "\t\t\t\t******Èı±¾Ëæ»úÍÆ¼öµÄÍ¼Êé" << endl<<endl;
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_GREEN);//ÉèÖÃÂÌÉ«
-	cout << "ÊäÈë¶ÔÓ¦Êı×Ö¼ü½øÈë,ÊäÈë¡¾q¡¿ÍË³ö" << endl<<endl;
-	cout << "\t\t\t¡¾1¡¿µÇÂ¼\t\t¡¾2¡¿×¢²á" << endl;
+	Console window;		//åˆå§‹åŒ–æ§åˆ¶å°
+	//ä¸»ç•Œé¢
+	cout << "\t\t\t\t\tå›¾ä¹¦ç®¡ç†ç³»ç»Ÿ" << endl;
+	cout << "\téšæœºæ¨èï¼š" << endl;
+	cout << "\t\t\t\t******ä¸‰æœ¬éšæœºæ¨èçš„å›¾ä¹¦" << endl;
+	cout << "\t\t\t\t******ä¸‰æœ¬éšæœºæ¨èçš„å›¾ä¹¦" << endl;
+	cout << "\t\t\t\t******ä¸‰æœ¬éšæœºæ¨èçš„å›¾ä¹¦" << endl<<endl;
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_INTENSITY | FOREGROUND_GREEN);//è®¾ç½®ç»¿è‰²
+	cout << "è¾“å…¥å¯¹åº”æ•°å­—é”®è¿›å…¥,è¾“å…¥ã€qã€‘é€€å‡º" << endl<<endl;
+	cout << "\t\t\tã€1ã€‘ç™»å½•\t\tã€2ã€‘æ³¨å†Œ" << endl;
 	//begin
 
 	char flag;												
-	while (flag = _getch()) {							//ÅĞ¶ÏÓÃ»§ÒâÍ¼
+	while (flag = _getch()) {							//åˆ¤æ–­ç”¨æˆ·æ„å›¾
 		switch (flag) {
 		case '1': {
 			clear
-				//Ö´ĞĞĞ£Ñé
+				//æ‰§è¡Œæ ¡éªŒ
 				//begin
 				break;
 		}
 		case '2': {
 			clear
-				//Ö´ĞĞ×¢²á·şÎñºóÖ±½ÓµÇÂ¼
+				//æ‰§è¡Œæ³¨å†ŒæœåŠ¡åç›´æ¥ç™»å½•
 				//begin
 				break;
 		}
@@ -43,7 +46,7 @@ int main() {
 			break;
 		}
 		default:
-			cout << "ÊäÈë´íÎó£¬ÔÙÊÔÒ»´Î" << endl;
+			cout << "è¾“å…¥é”™è¯¯ï¼Œå†è¯•ä¸€æ¬¡" << endl;
 			break;
 		}
 	}
@@ -51,7 +54,7 @@ int main() {
 
 
 
-	int a;
-	cin >> a;
+	char z;
+	cin >> z;
 	return 0;
 }

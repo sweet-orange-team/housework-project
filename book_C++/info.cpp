@@ -1,4 +1,5 @@
 /*
+写一些资料
 SetConsoleTitle("图书管理系统-by charon and Yvein");	//设置控制台标题
 system("mode con cols=80 lines=40  ");					//cols为控制台的宽度，lines则代表控制台的高度。
 //_getch();		即刻获取输入且不回显

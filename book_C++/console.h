@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 
-class Console		//控制台类
+class Console		//控制台类,用于修改控制台各项参数
 {
 public:
 	Console(const char* const &name="图书管理系统-by charon and Yvein",int col=100,int line=35);
