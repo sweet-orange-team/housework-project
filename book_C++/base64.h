@@ -1,6 +1,6 @@
 #include <string>
 
-//从网上找到的base64编码，就相当于一个加密吧.....
+//从网上找到的base64编码，就相当于一个加密吧......
 //示例代码
 //const std::string s = "123456";
 //std::string encoded = base64_encode(reinterpret_cast<const unsigned char*>(s.c_str()), s.length());
